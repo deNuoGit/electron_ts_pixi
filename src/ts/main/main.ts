@@ -1,8 +1,11 @@
+import { SYSTEM } from '../config/system';
+
 const {
     app,
     BrowserWindow,
     Menu,
   } = require('electron');
+
 
   
   // レンダープロセスとなるブラウザ・ウィンドウのオブジェクト。
@@ -13,10 +16,10 @@ const {
   function createWindow() { 
     // ブラウザウィンドウの作成
     win = new BrowserWindow({
-        width: 800,
-        maxwidth:800,
-        height: 600,
-        maxHeight:600,
+        width: SYSTEM.width,
+        maxwidth:SYSTEM.width,
+        height: SYSTEM.height,
+        maxHeight:SYSTEM.height,
         // autoHideMenuBar:true,
         useContentSize: true,
         titleBarStyle: 'hidden',

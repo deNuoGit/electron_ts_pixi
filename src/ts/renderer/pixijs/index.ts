@@ -1,10 +1,5 @@
 import * as PIXI from 'pixi.js'
-
-import Controller_Base from './Controller/Controller_Base';
-
 import { SYSTEM } from '../../config/system';
-
-
 
 class PIXI_MainProcess {
 
