@@ -1,3 +1,6 @@
+###################################################
+## github Node default ignore
+
 # Logs
 logs
 *.log
@@ -59,3 +62,20 @@ typings/
 
 # next.js build output
 .next
+
+###################################################
+## naokey settings
+
+# ignore directory
+node_modules/
+_memo/
+.vscode/
+dist/
+src/assets/
+src/json/
+src/ts/renderer/pixijs/Controller
+src/ts/renderer/pixijs/Sprite
+
+# ignore file
+/**/*.back
+yarn.lock

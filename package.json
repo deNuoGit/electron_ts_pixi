@@ -1,0 +1,28 @@
+{
+  "name": "game_test",
+  "version": "1.0.0",
+  "main": "./dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron ./",
+    "build": "webpack",
+    "main-dev": "webpack --config ./config/webpack.main.config.js",
+    "renderer-dev": "webpack --config ./config/webpack.renderer.config.js",
+    "mapchip-dev": "webpack --config ./config/webpack.mapchip.config.js"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/pixi.js": "^4.8.6",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.13.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "electron": "^4.0.6",
+    "pixi.js": "4.8.6"
+  }
+}
