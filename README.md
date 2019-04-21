@@ -1,0 +1,2 @@
+# electron_ts_pixi
+Electronを使ったTypeScript記述のpixi.jsでゲームを作る土台
