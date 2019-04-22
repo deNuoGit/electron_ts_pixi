@@ -1,14 +1,18 @@
+const os = require('os');
 const path = require('path');
 
-const root = path.resolve('.\\');
-const { dependencies } = require(`${root}\\package.json`);
-const tsconfig = `${root}\\tsconfig.json`;
-const srcDir = `${root}\\src\\ts`;
-const mainPath = `${srcDir}\\main\\main.ts`;
-const rendererPath = `${srcDir}\\renderer\\pixijs\\index.ts`;
-const mapchipPath = `${srcDir}\\renderer\\pixijs\\mapchip.ts`;
-const distPath = `${root}\\dist`;
-const template = `${root}\\public\\index.html`
+// winとその他でディレクトリ表記切り分け
+const dirPath = os.type().toString().match('Windows') !== null ? '\\' : '/';
+
+const root = path.resolve(`.${dirPath}`);
+const { dependencies } = require(`${root}${dirPath}package.json`);
+const tsconfig = `${root}${dirPath}tsconfig.json`;
+const srcDir = `${root}${dirPath}src${dirPath}ts`;
+const mainPath = `${srcDir}${dirPath}main${dirPath}main.ts`;
+const rendererPath = `${srcDir}${dirPath}renderer${dirPath}pixijs${dirPath}index.ts`;
+const mapchipPath = `${srcDir}${dirPath}renderer${dirPath}pixijs${dirPath}mapchip.ts`;
+const distPath = `${root}${dirPath}dist`;
+const template = `${root}${dirPath}public${dirPath}index.html`
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
