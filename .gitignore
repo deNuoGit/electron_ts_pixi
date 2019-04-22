@@ -79,3 +79,4 @@ src/ts/renderer/pixijs/Sprite
 # ignore file
 /**/*.back
 yarn.lock
+.DS_Store
